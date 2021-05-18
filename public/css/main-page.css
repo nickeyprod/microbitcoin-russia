@@ -144,7 +144,7 @@
 .wallet-choice .r-arr,
 .proposals>div .r-arr {
     border-radius: 100%;
-    width: 32px;
+    width: 29px;
     flex-direction: column;
     padding: 5px;
     justify-content: flex-end;
@@ -181,14 +181,26 @@
 }
 
 .wallets-line img {
-    max-width: 20%;
+    max-width: 40%;
     padding: 14px;
     transition: transform 0.2s;
     cursor: pointer;
 }
 
+.find-out {
+    display: none;
+}
+
 .wallets-line img:hover {
     transform: scale(1.15);
+}
+
+.wallets-line>div {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
 }
 
 .update-line {
@@ -360,5 +372,8 @@
     }
     .und {
         width: 35%;
+    }
+    .find-out {
+        display: flex;
     }
 }

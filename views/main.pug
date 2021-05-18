@@ -39,21 +39,27 @@ block content
         .middle-main 
             .left-pane 
                 .wallet-choice
-                    h1 Выбор кошелька
+                    h2 Выбор кошелька
                     div.prev-arr(style="display: flex; align-items: center;" onclick="window.open('/introduction/wallet', '_blank')")
-                        span(style="margin-right: 10px;") Узнать больше 
+                        span.find-out(style="margin-right: 10px;") Узнать больше 
                         span.r-arr &#8250;
                 h3(style="margin-top: 0; color: #203f8c;") MicroBitcoin кошельки
                 .wallets-line
-                    img(src="/static/imgs/web.png" style="border-right: 2px solid #e0d9d9;" onclick="window.open('https://microbitcoinorg.github.io/wallet/', '_blank')")
-                    img(src="/static/imgs/android.png" style="border-right: 2px solid #e0d9d9;" onclick="window.open('https://play.google.com/store/apps/details?id=com.microbitcoin', '_blank')")
-                    img(src="/static/imgs/pc.png" onclick="window.open('https://github.com/MicroBitcoinOrg/MicroBitcoin/releases', '_blank')") 
+                    div
+                        img(src="/static/imgs/web.png" onclick="window.open('https://microbitcoinorg.github.io/wallet/', '_blank')")
+                        div Web
+                    div
+                        img(src="/static/imgs/android.png" onclick="window.open('https://play.google.com/store/apps/details?id=com.microbitcoin', '_blank')")
+                        div Android
+                    div
+                        img(src="/static/imgs/pc.png" onclick="window.open('https://github.com/MicroBitcoinOrg/MicroBitcoin/releases', '_blank')") 
+                        div PC
 
             .right-pane
                 .payment-opt
-                    h1 Способ оплаты
+                    h2 Способ оплаты
                     div.prev-arr(style="display: flex; align-items: center;" onclick="window.open('/introduction/what-is-mbc', '_blank')" )
-                        span(style="margin-right: 10px;") Узнать больше 
+                        span.find-out(style="margin-right: 10px;") Узнать больше 
                         span.r-arr &#8250;
                 h3(style="margin-top: 0") Начните работать с MBC
                 p Уменьшение интервала создания нового блока до 1 минуты, низкие комиссии за транзакции и быстрое одобрение. MicroBitcoin - самый реалистичный способ оплаты.
