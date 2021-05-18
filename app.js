@@ -1,23 +1,24 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const session = require('express-session');
-const MongoStore = require('connect-mongo')(session);
-const mongoose = require('mongoose');
+// const MongoStore = require('connect-mongo');
+// const mongoose = require('mongoose');
 
-const MONGODB_URI = process.env.NMONGODB_URI ? process.env.MONGODB_URI : "mongodb://localhost:27017/pianica";
+const MONGODB_URI = process.env.NMONGODB_URI ? process.env.MONGODB_URI : "mongodb://localhost:27017/mbcdb";
 const PORT = process.env.PORT ? process.env.PORT : 2000;
 
 const app = express();
 
-mongoose.connect(MONGODB_URI, {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-    useCreateIndex: true,
-    useUnifiedTopology: true
-});
+
+// mongoose.connect(MONGODB_URI, {
+//     useNewUrlParser: true,
+//     useFindAndModify: false,
+//     useCreateIndex: true,
+//     useUnifiedTopology: true
+// });
 
 // add an error handler
-mongoose.connection.on('error', console.error.bind(console, 'connection error:'));
+// mongoose.connection.on('error', console.error.bind(console, 'connection error:'));
 
 // use sessions for tracking logins
 app.use(session({
@@ -28,10 +29,10 @@ app.use(session({
         secure: "auto",
         maxAge: 1000 * 60 * 60 * 24 * 28
     },
-    store: new MongoStore({
-        mongooseConnection: mongoose.connection,
-        ttl: 24 * 60 * 60, // = 24 hours, after that time - delete
-    })
+    // store: new MongoStore({
+    //     mongooseConnection: mongoose.connection,
+    //     ttl: 24 * 60 * 60, // = 24 hours, after that time - delete
+    // })
 }));
 
 // set locals
@@ -80,5 +81,5 @@ app.use(function(err, req, res, next) {
 
 // app will be listening on this port
 app.listen(PORT, () => {
-    console.log("microbitcoinnews.com running on localhost:" + PORT);
+    console.log("microbitcoin running on localhost:" + PORT);
 });
