@@ -1,20 +1,28 @@
 {
-    "name": "microbitcoin-russia",
-    "version": "1.0.0",
-    "main": "app.js",
-    "dependencies": {
-        "connect-mongo": "^4.4.1",
-        "del": "^6.0.0",
-        "express": "^4.17.1",
-        "express-session": "^1.17.1",
-        "mongoose": "^5.12.10",
-        "pug": "^3.0.2"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "nickeyprod",
-    "license": "ISC",
-    "description": "",
-    "devDependencies": {}
+  "name": "microbitcoin-russia",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "connect-mongo": "^4.4.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.12.10",
+    "pug": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nickeyprod",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0"
+  },
+  "description": ""
 }

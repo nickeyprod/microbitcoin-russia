@@ -1,0 +1,17 @@
+.white-paper {
+    font-family: 'Exo 2', sans-serif;
+    list-style-type: square;
+    font-size: 1.4em;
+}
+
+.white-paper a {
+    color: black;
+}
+
+.white-paper li {
+    margin: 10px;
+}
+
+.white-paper li a:hover {
+    color: #ffd356;
+}

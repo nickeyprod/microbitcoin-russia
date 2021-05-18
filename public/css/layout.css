@@ -134,6 +134,7 @@ body {
   padding: 10px;
   box-sizing: border-box;
   margin: 50px auto 100px;
+  font-size: 1.30em;
 }
 
 .main-menu {
@@ -319,6 +320,7 @@ body {
   color: white;
   margin-bottom: 50px;
   width: 100%;
+  font-size: 1.1em;
 }
 
 .mbc-flow,
@@ -368,7 +370,7 @@ body {
   transition: 0.6s;
   padding: 0;
   position: fixed;
-  top: 40px;
+  top: 37px;
   left: 0;
   box-shadow: 0px 3px 5px #3e3e3e;
 }
@@ -395,7 +397,7 @@ body {
 
 .mbc-logo {
   width: 100%;
-  height: 170px;
+  height: 190px;
   display: none;
   background: linear-gradient(361deg, navy 56%, #80aade);
   box-shadow: inset 3px 1px 16px #394a6d;
@@ -460,6 +462,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 4px 15px;
+  box-shadow: 1px 1px 4px #1b2640;
 }
 
 .logo-and-text {
@@ -473,7 +476,7 @@ body {
 }
 
 .slide-menu {
-  height: 190px;
+  height: 220px;
 }
 
 .mob-menu-and-logo.sticky-menu {
@@ -482,6 +485,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   background-color: #203f8c;
+  z-index: 2;
 }
 
 .mobile-content-wrapper {
@@ -561,7 +565,6 @@ body {
   background-color: #203f8c;
   width: 100%;
   font-family: 'Exo 2', sans-serif;
-  font-size: 1.2em;
   padding: 30px 0 0;
   position: relative;
   top: 0;
@@ -605,6 +608,7 @@ body {
   padding: 10px 20px 50px;
   margin: 30px 0px;
   display: flex;
+  font-size: 1.2em;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
@@ -656,7 +660,6 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  font-size: 0.8em;
 }
 
 .middle-main>div {
@@ -691,7 +694,7 @@ body {
   border-radius: 100%;
   width: 32px;
   flex-direction: column;
-  padding-bottom: 4px;
+  padding: 5px;
   justify-content: flex-end;
   align-items: center;
   height: 28px;
@@ -743,7 +746,7 @@ body {
 
 .updates {
   font-family: 'Exo 2', sans-serif;
-  padding: 20px 8%;
+  padding: 60px 8%;
   background-color: white;
   min-height: 50px;
   width: 100%;
@@ -899,6 +902,10 @@ body {
   .middle-main,
   .update-line {
     flex-direction: row;
+  }
+
+  .update-line>div {
+    width: 50%;
   }
 
   .middle-main>div {
@@ -1269,4 +1276,21 @@ body {
   .mbc-eco-img {
     width: 68%;
   }
+}
+.white-paper {
+  font-family: 'Exo 2', sans-serif;
+  list-style-type: square;
+  font-size: 1.4em;
+}
+
+.white-paper a {
+  color: black;
+}
+
+.white-paper li {
+  margin: 10px;
+}
+
+.white-paper li a:hover {
+  color: #ffd356;
 }
