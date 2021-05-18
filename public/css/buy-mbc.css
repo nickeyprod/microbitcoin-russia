@@ -1,0 +1,106 @@
+.buy-mbc {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.exchanges,
+.info-channels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.exchanges>img,
+.info-channels>img {
+    transition: transform 0.2s;
+    margin: 10px;
+}
+
+.info-channels>img {
+    border: 1px solid gray;
+    border-radius: 28px;
+    margin: 10px;
+}
+
+.exchanges>img:hover,
+.info-channels>img:hover {
+    cursor: pointer;
+    transform: scale(1.12);
+}
+
+.stex,
+.bibako {
+    background-color: #000;
+    border-radius: 28px;
+    padding: 26px 10px;
+}
+
+.p2pb2b {
+    background-color: rgb(214, 212, 212);
+    border-radius: 28px;
+    padding: 26px 10px;
+}
+
+.bit-on-bay {
+    border-radius: 30px;
+    width: 170px;
+}
+
+.cmc {
+    padding: 26px 10px;
+}
+
+.cc {
+    padding: 0px 4px;
+}
+
+.cg {
+    padding: 16px 7px;
+}
+
+.lcw {
+    padding: 16px 10px;
+}
+
+.cr {
+    padding: 32px 11px;
+}
+
+.coco {
+    padding: 20px 10px;
+}
+
+.cch {
+    padding: 15px 10px;
+}
+
+.request-additional-exch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.request-additional-exch button {
+    border: 1px solid #b1b1f0;
+    color: #6d91c9;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.request-additiona-exch button:hover {
+    background-color: #f5f9ff;
+}
+
+@media only screen and (min-width: 680px) {
+    .exchanges,
+    .info-channels {
+        flex-direction: row;
+    }
+    .request-additional-exch {
+        align-items: flex-start;
+        width: 100%;
+    }
+}

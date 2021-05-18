@@ -1,0 +1,101 @@
+.getting-started {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.wallet-img {
+    width: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+.choose-wallet {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+}
+
+.choose-wallet .left-pane {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.wallet-img {
+    width: 40%;
+}
+
+.choose-wallet button,
+.acquire-mbc button {
+    margin: 10px auto;
+    padding: 8px 14px;
+    border: 1px solid;
+    color: #267fd8;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.choose-wallet button:hover,
+.acquire-mbc button:hover {
+    cursor: pointer;
+    background-color: rgb(238, 240, 246);
+}
+
+.acquire-mbc {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+.acquire-mbc .left-pane {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.use-mbc {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+.use-mbc .left-pane {
+    width: 100%;
+}
+
+@media only screen and (min-width: 680px) {
+    .choose-wallet {
+        flex-direction: row;
+    }
+    .wallet-img {
+        width: 50%;
+    }
+    .choose-wallet .left-pane {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .acquire-mbc {
+        flex-direction: row-reverse;
+    }
+    .acquire-mbc .left-pane {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    .use-mbc {
+        flex-direction: row;
+    }
+    .use-mbc .left-pane {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+}

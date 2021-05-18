@@ -1,0 +1,65 @@
+.wallet {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.wallet-main-img {
+    width: 80%;
+}
+
+.mbc-wallets {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.mbc-wallets>div {
+    width: 90%;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.mbc-wallets>div>img {
+    margin-left: 10px;
+}
+
+.wallet-hr {
+    width: 90%;
+    margin: 20px 0px;
+}
+
+.pc-wallet img {
+    width: 34%;
+}
+
+.go-to-wallet-btn,
+.request-additional button {
+    border: 1px solid #b1b1f0;
+    color: #6d91c9;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.go-to-wallet-btn:hover,
+.request-additional button:hover {
+    background-color: #f5f9ff;
+}
+
+.request-additional {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media only screen and (min-width: 680px) {
+    .mbc-wallets {
+        flex-direction: initial;
+    }
+    .mbc-wallets>div {
+        width: 50%;
+    }
+    .wallet-hr {
+        display: none;
+    }
+}

@@ -1,0 +1,36 @@
+extends ./../index
+
+block content 
+    .buy-mbc 
+        h1.w-is-hd Купить MBC
+
+        h2(style="color: #151c8b") Есть несколько способов купить MicroBitcoin
+        p Способы покупки MicroBitcoin будут прибавляться. Если вы хотите приобрести MBC, посетите биржи, размещенные ниже на этой странице.
+        hr
+        h1.w-is-hd Криптовалютные биржи
+        .exchanges 
+            img(src="/static/imgs/stex.png" class="stex" onclick=`window.open('https://www.stex.com/', '_blank')`)
+            img(src="/static/imgs/p2pb2b.png" class="p2pb2b" onclick=`window.open('https://p2pb2b.io/', '_blank')`)
+            img(src="/static/imgs/bitonbay.jpeg" class="bit-on-bay" onclick=`window.open('https://bitonbay.com/', '_blank')`)
+            img(src="/static/imgs/bibako.png" class="bibako" onclick=`window.open('https://bibako.com/', '_blank')`)
+            .request-additional-exch
+                span.request-additional-span +
+                h2(style="color:#267fd8") Запросить размещение 
+                button(onclick=`alert('Пожалуйста посетите наш Discord канал по ссылке https://discord.gg/N6N7E8R и передайте необходимую информацию.')`) Запросить размещение на бирже
+        br
+        hr
+        br
+        h1.w-is-hd  Информационные каналы
+        .info-channels 
+            img(src="/static/imgs/coinmarketcap.png" class="cmc" onclick=`window.open('https://coinmarketcap.com/currencies/microbitcoin/', '_blank')`)
+            img(src="/static/imgs/coingecko.png" class="cg" onclick=`window.open('https://www.coingecko.com/en/coins/microbitcoin', '_blank')`)
+            img(src="/static/imgs/cryptocompare.png" class="cc" onclick=`window.open('https://www.cryptocompare.com/coins/mbtc/overview', '_blank')`)
+            img(src="/static/imgs/livecoinwatch.png" class="lcw" onclick=`window.open('https://www.livecoinwatch.com/price/MicroBitcoin-MBC', '_blank')`)
+            img(src="/static/imgs/cryptorank.png" class="cr" onclick=`window.open('https://cryptorank.io/price/microbitcoin', '_blank')`)
+            img(src="/static/imgs/coincodex.png" class="coco" onclick=`window.open('https://coincodex.com/crypto/microbitcoin/', '_blank')`)
+            img(src="/static/imgs/coinhills.png" class="cch" onclick=`window.open('https://www.coinhills.com/market/mbc/', '_blank')`)
+            .request-additional-exch
+                span.request-additional-span +
+                h2(style="color:#267fd8") Запросить дополнить 
+                button(onclick=`alert('Пожалуйста посетите наш Discord канал по ссылке https://discord.gg/N6N7E8R и передайте необходимую информацию.')`) Запросить дополнить канал
+            

@@ -1,0 +1,86 @@
+.mining {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.pow-algo-mine {
+    width: 90%;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.command-for-mine>p {
+    margin: 0px;
+}
+
+.command-for-mine {
+    color: #e83e8c;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+}
+
+.mining-formula {
+    width: 90%;
+    margin: 20px 10px;
+    box-sizing: border-box;
+}
+
+.pools {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.pools img {
+    max-width: 130px;
+    max-height: 100px;
+    margin: 10px 30px;
+    width: 70%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pools img:hover {
+    transform: scale(1.16);
+}
+
+.mining-info-channels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mining-info-channels img {
+    padding: 0px 21px;
+    border: 2px solid #8e8e8f;
+    border-radius: 18px;
+    margin: 8px 0px;
+    max-height: 62px;
+    cursor: pointer;
+}
+
+.mining-info-channels div {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 20px;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.mining-info-channels div:hover:not(:last-child) {
+    transform: scale(1.16);
+}
+
+@media only screen and (min-width: 680px) {
+    .mining-formula {
+        width: 70%;
+    }
+    .pow-algo-mine {
+        width: 70%;
+    }
+    .pools {
+        flex-direction: row;
+    }
+    .pool-img {
+        width: 14%;
+    }
+}

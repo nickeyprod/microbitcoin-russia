@@ -1,0 +1,64 @@
+.protocol {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.protocol-header {
+    width: 32%;
+    margin: 10px auto;
+    display: block;
+}
+
+.proto-line {
+    display: flex;
+    flex-direction: column;
+}
+
+.proto-line div {
+    width: 100%;
+    margin: 10px;
+}
+
+.proto-line h2 {
+    color: #267fd8;
+}
+
+.p-table th:not(.l-th) {
+    color: #267fd8;
+    text-align: left;
+}
+
+.p-table {
+    border-top: 3px solid #203f8c;
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+.p-table tr {
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.p-table td,
+.p-table th {
+    padding: 14px 8px;
+}
+
+.table-left {
+    text-align: left;
+}
+
+.p-table .mbc-tb {
+    color: #f3805e;
+    background-color: #f6f9fd;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 680px) {
+    .proto-line {
+        flex-direction: row;
+    }
+    .proto-line div {
+        width: 30%;
+    }
+}

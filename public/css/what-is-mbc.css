@@ -1,0 +1,43 @@
+.w-is-hd {
+    color: #151c8b;
+    margin-top: 32px;
+    margin-bottom: 42px;
+}
+
+.what-is-mbc {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.mbc-header {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.citate {
+    font-weight: bold;
+    color: #267fd8;
+    font-size: 1.4em;
+}
+
+.mbc-eco-img {
+    width: 100%;
+}
+
+.mbc-spec-img {
+    display: block;
+    width: 30%;
+    margin: 10px auto;
+}
+
+.technology_000 {
+    width: 14%;
+}
+
+@media only screen and (min-width: 680px) {
+    .mbc-header {
+        width: 50%;
+    }
+    .mbc-eco-img {
+        width: 68%;
+    }
+}

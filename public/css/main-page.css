@@ -1,0 +1,362 @@
+.general-header-1 {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+.general-header-2 {
+    text-align: center;
+    color: #fac941;
+    margin: 0;
+    font-size: 2.6em;
+    font-weight: bold;
+}
+
+.main-page {
+    word-wrap: break-word;
+    background-color: #203f8c;
+    width: 100%;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2em;
+    padding: 30px 0 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.main-page>h1 {
+    padding: 0 10px 0;
+    margin: 4px 0;
+}
+
+.main-page .links {
+    width: 80%;
+    cursor: pointer;
+}
+
+.main-page .links a {
+    color: white;
+    text-decoration: none;
+}
+
+.link-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link-line span {
+    color: white;
+}
+
+.link-line:hover.link-line a {
+    color: #fac941;
+}
+
+.link-line:hover.link-line span {
+    color: #fac941;
+}
+
+.split-mode {
+    padding: 10px 20px 50px;
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.split-mode .right-pane {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.split-mode .right-pane img {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.slideshow-cont {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mySlides {
+    display: none;
+    transition: display 0.4s;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #ffffff;
+}
+
+.middle-main {
+    font-family: 'Exo 2', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+}
+
+.middle-main>div {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px 50px;
+}
+
+.middle-main .right-pane {
+    background-color: #fac941;
+    color: white;
+}
+
+.middle-main .left-pane .r-arr {
+    color: white;
+}
+
+.wallet-choice {
+    color: #203f8c;
+}
+
+.payment-opt,
+.wallet-choice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.payment-opt .r-arr,
+.wallet-choice .r-arr,
+.proposals>div .r-arr {
+    border-radius: 100%;
+    width: 32px;
+    flex-direction: column;
+    padding-bottom: 4px;
+    justify-content: flex-end;
+    align-items: center;
+    height: 28px;
+    display: flex;
+    font-size: 1.3em;
+    background-color: #203f8c;
+    cursor: pointer;
+}
+
+.proposals>div .r-arr {
+    color: white;
+}
+
+.payment-opt>div:hover .r-arr,
+.wallet-choice>div:hover .r-arr,
+.proposals>div:hover .r-arr {
+    background-color: rgb(226, 105, 105);
+    color: white;
+    transition: 0.2s;
+}
+
+.payment-opt .prev-arr:hover,
+.wallet-choice .prev-arr:hover {
+    transition: 0.3s;
+    color: rgb(226, 105, 105);
+    cursor: pointer;
+}
+
+.wallets-line {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wallets-line img {
+    max-width: 20%;
+    padding: 14px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.wallets-line img:hover {
+    transform: scale(1.15);
+}
+
+.update-line {
+    display: flex;
+    flex-direction: column;
+}
+
+.updates {
+    font-family: 'Exo 2', sans-serif;
+    padding: 20px 8%;
+    background-color: white;
+    min-height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.network-update {
+    color: white;
+    padding: 20px;
+    min-height: 100px;
+    background-image: url('/static/assets/news_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.proposals {
+    padding: 30px;
+    min-height: 100px;
+}
+
+.MBCians {
+    font-family: 'Exo 2', sans-serif;
+    padding: 20px 8%;
+    background-color: #fff;
+    min-height: 300px;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    background-position: center;
+    background-image: url('/static/assets/bg_01.jpg');
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 10px 20px;
+}
+
+.socials .soc:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.socials .soc img:hover {
+    transform: scale(1.14);
+}
+
+.socials .soc p {
+    font-size: 0.8em;
+}
+
+.socials .soc p,
+.socials .soc h3 {
+    margin: 4px 0px 0px;
+    text-align: center;
+}
+
+.socials .soc h3 {
+    color: #fac941;
+}
+
+.socials .soc img {
+    width: 30%;
+    transition: transform 0.2s;
+}
+
+.socials .soc {
+    opacity: 0.8;
+    display: flex;
+    width: 70%;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mining-pools,
+.crypto-exchanges {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: white;
+    padding: 40px 8%;
+}
+
+.understanding-mbc {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f9f9fc;
+    padding: 60px 8%;
+}
+
+.und-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.und img {
+    width: 40%;
+}
+
+.und h3 {
+    margin: 20px 0 4px;
+}
+
+.und p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.und {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+
+.mining-pools .pools {
+    align-items: center;
+}
+
+@media only screen and (min-width: 680px) {
+    .general-header-1,
+    .general-header-2 {
+        text-align: left;
+    }
+    .socials {
+        flex-direction: row;
+    }
+    .socials .soc img {
+        width: 20%;
+    }
+    .split-mode {
+        flex-direction: row;
+        margin: 10px 60px 50px;
+    }
+    .split-mode .right-pane {
+        margin-top: 0px;
+    }
+    .main-page>h1 {
+        padding: 0 60px 0;
+    }
+    .middle-main,
+    .update-line {
+        flex-direction: row;
+    }
+    .middle-main>div {
+        padding: 10px 60px 50px;
+    }
+    .und-line {
+        flex-direction: row;
+    }
+    .und {
+        width: 35%;
+    }
+}

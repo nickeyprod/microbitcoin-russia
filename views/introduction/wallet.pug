@@ -1,0 +1,40 @@
+extends ./../index
+
+block content 
+    .wallet
+        h1.w-is-hd Кошелек
+        img(src="/static/imgs/wallet_main_001.png" class="wallet-main-img")
+        br
+        p MicroBitcoin позволяет вам выбрать наиболее удобный веб-кошелёк, который позволяет 
+            | подключаться с любого устройства, которое имеет интернет браузер. Мы также предоставляем 
+            | дополнительное приложение, позволяющее легко получить доступ с мобильного телефона, который у вас есть.
+            | Новые кошельки постепенно появляются, и участники сообщества всегда могут свободно внедрять и запрашивать их добавление здесь. 
+        h1.w-is-hd MicroBitcoin Кошельки
+        .mbc-wallets 
+            .web-wallet 
+                img(src="/static/imgs/web.png")
+                h2(style="color:#267fd8") Веб кошелёк
+                p Простой онлайн-кошелёк для MicroBitcoin (MBC). Отправляйте, Получайте и проверяйте свой баланс используя этот онлайн-инструмент.
+                button.go-to-wallet-btn(onclick="window.open('https://microbitcoinorg.github.io/wallet/', '_blank');") Переход к веб кошельку
+            hr.wallet-hr
+            .android-wallet 
+                img(src="/static/imgs/android.png")
+                h2(style="color:#267fd8") Android кошелёк
+                p Простой в использовании Microbitcoin (MBC) кошелёк для вашего Android устройства. Отправляйте, получайте и проверяйте свой баланс с помощью этого приложения.
+                button.go-to-wallet-btn(onclick="window.open('https://play.google.com/store/apps/details?id=com.microbitcoin', '_blank');") Переход к Android кошельку
+            hr.wallet-hr
+            .pc-wallet
+                img(src="/static/imgs/pc.png")
+                h2(style="color:#267fd8") PC Кошельки
+                p Кошельки для Windows, MAC OS и их исходный код.
+                button.go-to-wallet-btn(onclick="window.open('https://github.com/MicroBitcoinOrg/MicroBitcoin/releases', '_blank')") Переход к PC Кошелькам
+            hr.wallet-hr
+            .ios-wallet
+                img(src="/static/imgs/ios.png")
+                h2(style="color:#267fd8") IOS Кошелёк
+                p В разработке.
+            hr.wallet-hr
+            .request-additional
+                span.request-additional-span +
+                h2(style="color:#267fd8") Добавить кошелёк
+                button(onclick=`alert('Пожалуйста посетите наш Discord канал по ссылке https://discord.gg/N6N7E8R и передайте необходимую информацию.')`) Запросить добавление кошелька

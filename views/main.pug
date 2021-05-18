@@ -1,0 +1,131 @@
+extends ./index
+
+block head 
+    <style>body{ background-color:#203f8c;}</style>
+    <style>.main-menu {box-shadow: 0 2px 4px #202f65;}.b-content {margin: 0;width:100%;padding: 0; box-sizing:border-box;}</style>
+
+block content
+    .main-page
+        h1.general-header-1 Держите Bitcoin,
+        h1.general-header-2 Пользуйтесь MicroBitcoin
+        br
+        .split-mode
+            .left-pane
+                div(style="color: white;") Платёжный протокол построенный на блокчейн технологии
+                div(style="color: white;") с открытым кодом, децентрализацией
+                div(style="color: white;") и P2P платежами.
+                br
+                .links 
+                    hr
+                    .link-line 
+                        a(href="/introduction/what-is-mbc") Что такое MBC?
+                        div.right-arr
+                            span(style="font-size: 0.7em;") &#8250;
+                    hr
+                    .link-line 
+                        a(href="https://mbc.wiki/" target="_blank") Присоединиться к MicroBitcoin разработке
+                        div.right-arr
+                            span(style="font-size: 0.7em;") &#8250;
+                    hr
+            .right-pane
+                .slideshow-cont
+                    img(class="mySlides" src="/static/imgs/header_01.png")
+                    img(class="mySlides" src="/static/imgs/header_02.png")
+                    img(class="mySlides" src="/static/imgs/header_03.png")
+                    div(style="text-align:center;margin-top: 20px;")
+                        span(class="dot" onclick="currentSlide(1)")
+                        span(class="dot" onclick="currentSlide(2)")
+                        span(class="dot" onclick="currentSlide(3)")
+        .middle-main 
+            .left-pane 
+                .wallet-choice
+                    h1 Выбор кошелька
+                    div.prev-arr(style="display: flex; align-items: center;" onclick="window.open('/introduction/wallet', '_blank')")
+                        span(style="margin-right: 10px;") Узнать больше 
+                        span.r-arr &#8250;
+                h3(style="margin-top: 0; color: #203f8c;") MicroBitcoin кошельки
+                .wallets-line
+                    img(src="/static/imgs/web.png" style="border-right: 2px solid #e0d9d9;" onclick="window.open('https://microbitcoinorg.github.io/wallet/', '_blank')")
+                    img(src="/static/imgs/android.png" style="border-right: 2px solid #e0d9d9;" onclick="window.open('https://play.google.com/store/apps/details?id=com.microbitcoin', '_blank')")
+                    img(src="/static/imgs/pc.png" onclick="window.open('https://github.com/MicroBitcoinOrg/MicroBitcoin/releases', '_blank')") 
+
+            .right-pane
+                .payment-opt
+                    h1 Способ оплаты
+                    div.prev-arr(style="display: flex; align-items: center;" onclick="window.open('/introduction/what-is-mbc', '_blank')" )
+                        span(style="margin-right: 10px;") Узнать больше 
+                        span.r-arr &#8250;
+                h3(style="margin-top: 0") Начните работать с MBC
+                p Уменьшение интервала создания нового блока до 1 минуты, низкие комиссии за транзакции и быстрое одобрение. MicroBitcoin - самый реалистичный способ оплаты.
+
+        .updates
+            hr(style="color: black; background: black;")
+            h1 Новости & Обновления
+            .update-line
+                .network-update
+                    h1 Обновление сети
+                    p На блоке номер 1,137,200, предполагаемое время: 9 октября 2019 г., 11:00 (UTC + 0). Алгоритм Power2b Proof-of-Work.
+                .proposals 
+                    h1 MBC Предложения
+                    p MicroBitcoin - это сообщество с открытым исходным кодом. Вы можете предложить свою идею или присоединиться к уже выполняемым задачам. Начните сегодня.
+                    div.prev-arr(style="display: flex; justify-content: flex-end; align-items: center;" onclick="window.open('https://mbc.wiki/t/proposals', '_blank')")
+                        span.r-arr &#8250;
+        .MBCians 
+            h1 Будь MBС-ious!
+            p MicroBitcoin, как проект с открытым исходным кодом создан так, что в него может внести свой вклад каждый. Сделайте MicroBitcoin еще более совершенным, приняв участие в его разработке или в развитии его различных каналов и сообществ.
+            .socials 
+                .soc(onclick="window.open('https://github.com/MicroBitcoinOrg', '_blank')")
+                    img(src="/static/imgs/social/social_github.png")
+                    h3 GITHUB 
+                    p Разработка исходного кода MicroBitcoin.  
+                .soc(onclick="window.open('https://discord.io/microbitcoin', '_blank')")
+                    img(src="/static/imgs/social/social_discord.png")
+                    h3 DISCORD
+                    p Сообщество для детального обсуждения MicroBitcoin.  
+                .soc(onclick="window.open('https://bitcointalk.org/index.php?topic=3982489.msg37769108', '_blank')")
+                    img(src="/static/imgs/social/social_bitcointalk.png")
+                    h3 BITCOINTALK
+                    p Наиболее активный дискуссионный форум по технологиям MBC.  
+        .mining-pools
+            h1 Майнинг пулы
+            .pools(style="justify-content: space-between;")
+                img(src="/static/imgs/pools/skypool.png" class="sk-pl" onclick="window.open('https://mbc.skypool.co/', '_blank')")
+                img(src="/static/imgs/pools/zergpool.png" class="zg-pl" onclick="window.open('https://zergpool.com/', '_blank')")
+                img(src="/static/imgs/pools/rplant.png" class="rp-pl" onclick="window.open('https://pool.rplant.xyz/', '_blank')")
+                img(src="/static/imgs/pools/matrix_pool.jpg" class="mtx-pl" onclick="window.open('http://matrix-pool.info/', '_blank')")
+                img(src="/static/imgs/pools/zpool(big).png" class="z-pl" onclick="window.open('https://zpool.ca/', '_blank')")
+                img(src="/static/imgs/pools/miningmadness.png" class="mm-pl" onclick="window.open('https://miningmadness.com/', '_blank')")
+                img(src="/static/imgs/pools/blockmasters.png" class="bm-pl" onclick="window.open('http://blockmasters.co/', '_blank')")
+                img(src="/static/imgs/pools/cpu-pool.png" class="cpu-pl" onclick="window.open('http://cpu-pool.com/', '_blank')")
+        
+        .crypto-exchanges 
+            h1 Криптовалютные биржи
+            .exchanges(style="justify-content: space-between;")
+                img(src="/static/imgs/stex.png" class="stex" onclick=`window.open('https://www.stex.com/', '_blank')`)
+                img(src="/static/imgs/p2pb2b.png" class="p2pb2b" onclick=`window.open('https://p2pb2b.io/', '_blank')`)
+                img(src="/static/imgs/bitonbay.jpeg" class="bit-on-bay" onclick=`window.open('https://bitonbay.com/', '_blank')`)
+                img(src="/static/imgs/bibako.png" class="bibako" onclick=`window.open('https://bibako.com/', '_blank')`)
+        .understanding-mbc 
+            h1 Корректное понимание MicroBitcoin
+            p MicroBitcoin - это децентрализованная, отслеживаемая форма оплаты, в которую каждый может внести свой вклад. Это быстро и безопасно, стремясь быть «концепцией», которую все используют, такой же как электронная почта. Эта философия реализуется с помощью технологии, разработанной MicroBitcoin, выпущена в виде криптовалюты.
+            .und-line
+                .und 
+                    img(src="/static/imgs/und_01.png")
+                    h3 Коррекция эмиссии
+                    p Справедливое распределение предложения
+                .und 
+                    img(src="/static/imgs/und_02.png")
+                    h3 Алгоритм Power2B
+                    p ASIC-устойчивый майнинг
+                .und
+                    img(src="/static/imgs/und_03.png")
+                    h3 1 БЛОК/МИНУТА
+                    p Более быстрые транзакции
+                .und
+                    img(src="/static/imgs/und_04.png")
+                    h3 Blake2b индексирование
+                    p Безопасное хэширование
+            
+    script.
+        showSlides((slideIndex = 0));
+

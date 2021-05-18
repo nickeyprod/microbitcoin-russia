@@ -1,0 +1,131 @@
+extends ../index
+
+block content
+  .regular-wallet-tab
+    .card-header
+      ul
+        li
+          a Regular wallet
+        li
+          a Open by key
+          
+        input(placeholder="Email address")
+        input(placeholder="Password")
+        input(placeholder="Confirm password")
+        button Open
+
+          <form id="open-key-form" class="open-form tab-item d-none" data-tab="open-key">
+            <div class="input-group">
+              <input id="passphrase" name="passphrase" class="form-control" type="password" tkey="wif-key" placeholder="WIF Private key">
+              <div class="input-group-append">
+                <button class="btn btn-outline-dark b-width" type="submit" id="open-key-wallet" tkey="open">Open</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="card-footer">
+          <div class="footer-item tab-item" data-tab="open-regular" tkey="open-reminder"><b>Notice:</b> Please make sure that you remember your account details, otherwise you may lose access to your funds.</div>
+          <div class="footer-item tab-item d-none" data-tab="open-key">
+            <span tkey="generate-question">Still don't have wallet?</span> <span tkey="generate-it"><a href="#/create">Generate</a> it!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="wallet-block" class="d-none">
+      <div class="card mb-3">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item mr-2">
+              <a class="nav-link tab-link active" data-tab-name="wallet-balance" data-tab-family="wallet-block" href="#" tkey="wallet">Wallet</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a class="nav-link tab-link" data-tab-name="wallet-send" data-tab-family="wallet-block" href="#" tkey="send">Send</a>
+            </li>
+            <li class="nav-item mr-2">
+              <a id="history-link" class="nav-link" target="_blank" href="https://microbitcoinorg.github.io/explorer/#/address/" tkey="history">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tab-link" data-tab-name="wallet-keys" data-tab-family="wallet-block" href="#" tkey="keys">Keys</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <div class="text-center">
+            <div class="tab-item" data-tab="wallet-balance">
+              <div id="qr-code-addres" class="qr-code"></div>
+              <div id="wallet-address"></div>
+              <div class="wallet-balance mb-0 pb-0 c-pointer">
+                <span class="text-monospace amount"></span>
+                <span class="ticker" tkey="loading">Loading...</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="wallet-send" class="tab-item d-none" data-tab="wallet-send">
+            <p>
+              <span>
+                <span tkey="available-balance">Available balance:</span>
+                <b class="wallet-balance balance-small c-pointer">
+                  <span class="amount"></span>
+                  <span class="ticker" tkey="loading">Loading...</span>
+                </b>
+              </span>
+              <a href="#" id="send-reset" style="float: right;" tkey="reset">Reset</a>
+            </p>
+
+            <div id="send-outputs">
+              <div class="input-group send-outputs-item mb-2">
+                <input name="send-address" class="form-control" type="text" value="" tkey="enter-address" placeholder="Enter address">
+                <input name="send-ammount" class="form-control" type="text" value="" tkey="amount" placeholder="Amount">
+                <div class="input-group-append">
+                  <button id="add-output" class="btn btn-success">
+                    <span class="entypo plus"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <input id="send-fee" class="form-control" placeholder="Fee" type="text" value="">
+              <div class="input-group-append">
+                <button class="btn btn-outline-dark b-width" type="submit" id="send-tx" tkey="send">Send</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-item d-none" data-tab="wallet-keys">
+            <div id="wallet-keys">
+              <div id="wallet-keys-pubkey">
+                <label tkey="public-key">Public Key</label>
+                <div class="input-group pb-2">
+                  <input class="form-control" readonly="" type="text">
+                </div>
+              </div>
+
+              <div id="wallet-keys-privkey">
+                <label tkey="private-key">Private Key</label>
+                <div class="input-group pb-2">
+                  <div class="input-group">
+                    <input class="form-control keys-privkey privkey" readonly="" data-original-title="" title="" type="password">
+                    <span class="input-group-append">
+                      <button class="btn btn-outline-dark b-width toggle-priv-key" type="button" tkey="show">Show</button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div id="wallet-keys-script">
+                <label>Redeem Script <i>(SegWit)</i></label>
+                <div class="input-group pb-2">
+                  <input class="form-control" readonly="" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <button id="footer-close" type="button" class="btn btn-danger btn-block footer-item" tkey="close">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>

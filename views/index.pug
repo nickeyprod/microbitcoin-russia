@@ -1,0 +1,23 @@
+doctype html
+
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    script(src="/static/js/distr/main.min.js" type="text/javascript")
+    link(rel="stylesheet" href="/static/css/distr/layout.min.css")
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    title MicroBitcoin: #{title}
+    block head
+  body
+    include includes/header.pug
+    .b-content
+      block content
+    include includes/footer.pug
+  script.
+    window.onscroll = () => { shrinkMenu() };

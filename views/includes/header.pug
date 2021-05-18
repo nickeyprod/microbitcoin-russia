@@ -1,0 +1,39 @@
+.main-menu-container
+  div.mbc-logo-wrap(title="MicroBitcoin Project" onclick="window.location.href='/';")
+    img(src="/static/imgs/b1.png" class="mbc-flow")
+    img(src="/static/imgs/b1.png" class="mbc-flow2")
+    img(src="/static/imgs/b1.png" class="mbc-flow3")
+    img(id="mbc-main-logo" src="/static/imgs/mbc_logo2.png" class="mbc-logo")
+  .mob-menu-and-logo.sticky-menu
+    div(style="display:flex; justify-content: space-between; width: 100%;")
+      .logo-and-text(onclick="window.location.href='/'")
+        img(id="sticky-mbclogo" src="/static/imgs/mbc_sticky_logo.png" class="sticky-mbc-logo")
+        span(style="margin-left: 10px;").microbitcoin MICRO<span style="font-weight:bold;">BITCOIN</span>
+      .mobile-icon#mob-icn(style="margin-right: 5px;" onclick="toggleMobileMenu(this)") 
+        div(class="bar1")
+        div(class="bar2")
+        div(class="bar3")
+  .menu-content-wrapper
+    ul.main-menu(id="main-menu")
+      hr(style="width:100%")
+      img(title="MicroBitcoin Project" onclick="window.location.href='/';" id="sticky-mbclogo2" src="/static/imgs/mbc_sticky_logo.png" class="sticky-mbc-logo2")
+      li
+        a(href="/introduction") Представление
+      li
+        a(href="/development") Разработка
+      //- li
+      //-   a(href="/info") Информация
+      li 
+        a(href="https://microbitcoinorg.github.io/wallet/#/" target="_blank") Веб Кошелёк
+      li 
+        a(href="/white-paper") Доклад (WhitePaper)
+      li 
+        a(href="https://microbitcoinorg.github.io/explorer/#/" target="_blank") Блокчейн
+    //- if userId
+    //-   li
+    //-     a(href="/account/logout") Выйти
+    //- else
+    //-   li(id="create-new-link" class="menu-link")
+    //-     a(href="/account/create-new") Новый аккаунт
+    //-   li(id="login-link")
+    //-     a(href="/account/login") Войти

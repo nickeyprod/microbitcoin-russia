@@ -1,0 +1,83 @@
+extends ./../index
+
+block content 
+    .protocol
+        h1.w-is-hd MicroBitcoin Протокол
+        img(src="/static/imgs/protocol-header.png" class="protocol-header")
+        .proto-line
+            div 
+                h2 Хардфорк Биткоина
+                p Отделён от Биткоина на 520 000-ом блоке.
+            div 
+                h2 Алгоритм Power2b 
+                p Применение алгоритма PoW защищающего от централизованного майнинга на ASIC майнинг устройствах. 
+            div
+                h2 Алгоритм LWMA
+                p Применение алгоритма, устойчивого к попыткам аномального майнинга, ради получения большинства блоков одним и тем же игроком. Первое в мире успешное применение среди альтернативных криптовалют.
+        hr
+        h1.w-is-hd Сравнение отделённых от Биткоина криптовалют
+        .table-left
+            table.p-table
+                tr 
+                    th
+                    th Bitcoin 
+                    th BitcoinCash
+                    th BitcoinGold
+                    th(style="color: #f3805e;") MicroBitcoin
+                tr 
+                    th.l-th Общее предложение
+                    td 21МЛН
+                    td 21МЛН
+                    td 21МЛН
+                    td.mbc-tb 61МЛРД
+                tr 
+                    th.l-th PoW алгоритм
+                    td SHA256 
+                    td SHA256 
+                    td Equihash
+                    td.mbc-tb Power2b 
+                tr 
+                    th.l-th Майнинг оборудование
+                    td ASIC 
+                    td ASIC 
+                    td CPU/GPU
+                    td.mbc-tb CPU
+                tr 
+                    th.l-th Интервал создания блока
+                    td 10мин
+                    td 10мин
+                    td 10мин
+                    td.mbc-tb 1мин
+                tr 
+                    th.l-th Пересчёт сложности
+                    td Каждые 2 недели
+                    td DAA 
+                    td Каждый блок
+                    td.mbc-tb Каждый блок
+                tr 
+                    th.l-th Реализация SegWit 
+                    td Реализован
+                    td -
+                    td Реализован
+                    td.mbc-tb Реализован
+                tr 
+                    th.l-th Защита от атаки повторной отправки
+                    td -
+                    td Реализована
+                    td Реализована
+                    td.mbc-tb Реализована
+                tr 
+                    th.l-th Различные форматы адреса
+                    td -
+                    td -
+                    td Реализованы
+                    td.mbc-tb Реализованы
+                tr 
+                    th.l-th Lightning Network
+                    td Способен
+                    td -
+                    td Способен
+                    td.mbc-tb Способен
+
+
+

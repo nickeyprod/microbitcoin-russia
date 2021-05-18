@@ -1,0 +1,13 @@
+extends ../index
+
+block content
+    .creation-form
+        h3 MBCLogin | New Account
+        form(class="v-done-acc-create" action="" method="post")
+            div
+                label(for="email") Email-адрес: 
+                input(type="text" name="email" required placeholder="Введите ваш email-адрес")
+            div
+                label(for="password") Пароль: 
+                input(type="password" name="password" placeholder="Придумайте пароль" required autocomplete="new-password")
+            button(type="submit") Создать

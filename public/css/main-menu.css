@@ -1,0 +1,221 @@
+.main-menu-container {
+    background-color: #151c8b;
+    color: white;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.mbc-flow,
+.mbc-flow2,
+.mbc-flow3 {
+    opacity: 0.8;
+    display: none;
+}
+
+.mbc-flow {
+    z-index: 0;
+    position: absolute;
+    top: -57px;
+    right: 10rem;
+    width: auto;
+    height: 192px;
+}
+
+.mbc-flow2 {
+    z-index: 0;
+    position: absolute;
+    top: 12px;
+    right: 31rem;
+    width: auto;
+    height: 200px;
+}
+
+.mbc-flow3 {
+    z-index: 0;
+    position: absolute;
+    top: -66px;
+    left: 11rem;
+    width: auto;
+    height: 241px;
+}
+
+.main-menu {
+    width: 100%;
+    background-color: #203f8c;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 1.16em;
+    font-family: 'Russo One', sans-serif;
+    height: 0px;
+    overflow: hidden;
+    margin: 0;
+    transition: 0.6s;
+    padding: 0;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    box-shadow: 0px 3px 5px #3e3e3e;
+}
+
+.main-menu li {
+    cursor: pointer;
+    list-style-type: none;
+    margin: 6px 0px;
+    margin-right: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-menu a:hover {
+    color: #ffd356;
+}
+
+.mbc-logo-wrap:hover {
+    cursor: pointer;
+}
+
+.mbc-logo {
+    width: 100%;
+    height: 170px;
+    display: none;
+    background: linear-gradient(361deg, navy 56%, #80aade);
+    box-shadow: inset 3px 1px 16px #394a6d
+}
+
+.sticky-mbc-logo,
+.sticky-mbc-logo2 {
+    height: 40px;
+    width: 26px;
+    margin-top: -6px;
+    margin-bottom: -6px;
+}
+
+.sticky-mbc-logo2 {
+    cursor: pointer;
+    display: none;
+}
+
+.menu-content {
+    width: 100%;
+    height: 0;
+    text-align: right;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
+/* mobile icon css */
+
+.mobile-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+/* mobile menu css */
+
+.mob-menu-and-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 15px;
+}
+
+.logo-and-text {
+    display: flex;
+    align-items: center;
+}
+
+.microbitcoin {
+    font-size: 1.24em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slide-menu {
+    height: 190px;
+}
+
+.mob-menu-and-logo.sticky-menu {
+    position: fixed;
+    top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #203f8c;
+}
+
+.mobile-content-wrapper {
+    position: fixed;
+    top: 40px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 680px) {
+    .mbc-flow,
+    .mbc-flow2,
+    .mbc-flow3 {
+        display: initial;
+    }
+    .mbc-logo {
+        display: block;
+    }
+    .main-menu {
+        display: flex;
+        flex-direction: row;
+        height: initial;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 8px;
+        position: relative;
+        top: 0px;
+    }
+    .main-menu hr {
+        display: none;
+    }
+    .main-menu li {
+        margin: 0px;
+    }
+    .menu-content {
+        overflow: visible;
+    }
+    .mob-menu-and-logo {
+        display: none;
+    }
+    .sticky-menu {
+        position: fixed;
+        top: 0;
+    }
+    .mobile-content-wrapper {
+        display: block;
+        position: relative;
+    }
+    .show-mbc-logo2 {
+        display: block;
+    }
+}

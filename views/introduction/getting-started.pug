@@ -1,0 +1,28 @@
+extends ./../index
+
+block content 
+    .getting-started
+        h1.w-is-hd(style="text-align: left;") С чего начать?
+
+        .choose-wallet
+            .left-pane
+                h2(style="color: #267fd8") 1. Выберите кошелёк
+                p Кошелёк может быть на вашем мобильном телефоне или на вашем компьютере. Выбирайте из любого кошелька, разработанного участниками сообщества.
+                button(onclick=`window.location.href="/wallet"`) Выбрать кошелёк
+            .right-pane
+                img(class="wallet-img" src="/static/imgs/dash_img_000.png")
+        hr.split-hr
+        .acquire-mbc 
+            .left-pane 
+                h2(style="color: #267fd8") 2. Получите MBC
+                p MicroBitcoin может быть куплен на бирже или получен от другого участника.
+                button(onclick=`window.location.href="/buy-mbc"`) Найти биржу
+            .right-pane
+                img(class="wallet-img" src="/static/imgs/dash_img_001.png")
+        hr.split-hr
+        .use-mbc 
+            .left-pane 
+                h2(style="color: #267fd8") 3. Пользуйтесь MBC
+                p  Удобно совершайте платежи, отправляя свои MBC при покупках, торговле на бирже или же отправляйте друзьям. 
+            .right-pane
+                img(class="wallet-img" src="/static/imgs/dash_img_002.png")
