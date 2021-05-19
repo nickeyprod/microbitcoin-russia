@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: http://www.microbitcoin-russia.org/static/for_rawlers/sitemap.xml
