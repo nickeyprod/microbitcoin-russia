@@ -1,6 +1,7 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const session = require('express-session');
+const favicon = require('serve-favicon');
+const path = require('path');
 // const MongoStore = require('connect-mongo');
 // const mongoose = require('mongoose');
 
@@ -42,8 +43,10 @@ app.use(function(req, res, next) {
 });
 
 // parse incoming requests
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+app.use(favicon(path.join(__dirname, '/public', 'favicon.ico')))
 
 // serving static files in /static url
 app.use('/static', express.static('public'));
